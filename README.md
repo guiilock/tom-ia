@@ -1,30 +1,28 @@
+Trae
+
 # Tom-IA: Assistente Virtual Inteligente
-
 ## 🤖 Sobre o Projeto
-
 Tom-IA é um assistente virtual inteligente desenvolvido para o Slack, utilizando a API da OpenAI para processamento de linguagem natural e um sistema modular de ferramentas para execução de tarefas específicas.
 
 ## 🔄 Fluxograma do Sistema
-
-```mermaid
-graph TD
-    A[Mensagem do Usuário no Slack] --> B[Slack Event Handler]
-    B --> C[AI Service]
-    C --> D[OpenAI LLM]
-    D --> E{Análise da Mensagem}
-    E -->|Requer Ferramenta| F[Sistema de Ferramentas]
-    F --> G[Execução da Ferramenta]
-    G --> H[Formatação da Resposta]
-    E -->|Resposta Direta| H
-    H --> I[Resposta ao Usuário]
-
+```
+graph TD
+    A[Mensagem do Usuário no Slack] --> B[Slack Event Handler]
+    B --> C[AI Service]
+    C --> D[OpenAI LLM]
+    D --> E{Análise da Mensagem}
+    E -->|Requer Ferramenta| F[Sistema de Ferramentas]
+    F --> G[Execução da Ferramenta]
+    G --> H[Formatação da Resposta]
+    E -->|Resposta Direta| H
+    H --> I[Resposta ao Usuário]
+```
 ## 🚀 Começando
 ### Pré-requisitos
 - Node.js (versão 14 ou superior)
 - NPM ou Yarn
 - Conta no Slack com permissões de administrador
 - Acesso à API da OpenAI ou servidor interno compatível
-
 ### Instalação
 1. Clone o repositório:
 ```
